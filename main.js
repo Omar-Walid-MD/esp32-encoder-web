@@ -226,7 +226,7 @@ function createElementFromHTML(htmlString) {
 
 function addPopup(text)
 {
-    const popupElement = createElementFromHTML(`<div class="popup">${text}</div>`);
+    const popupElement = createElementFromHTML(`<div class="popup">✅ ${text}</div>`);
     popupContainer.appendChild(popupElement);
 
     setTimeout(() => {
@@ -236,4 +236,3 @@ function addPopup(text)
 
 
 updateReps();
-addPopup("amogus");
